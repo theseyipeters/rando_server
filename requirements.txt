@@ -20,3 +20,4 @@ six
 # @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
 Werkzeug==3.0.3
 zipp==3.19.2
+python-dotenv
