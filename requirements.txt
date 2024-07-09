@@ -23,3 +23,4 @@ zipp==3.19.2
 python-dotenv
 flask-pymongo
 PyJWT
+passlib
