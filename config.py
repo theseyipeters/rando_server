@@ -14,6 +14,3 @@ class Config:
 
     MONGO_URI = f'mongodb+srv://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_CLUSTER_URL}/{MONGO_DBNAME}?retryWrites=true&w=majority'
 
-# Example usage
-config = Config()
-print(config.MONGO_URI)
