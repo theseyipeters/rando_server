@@ -10,7 +10,10 @@ from routes.data_template_routes import data_template_bp
 
 app = Flask(__name__)
 app.config.from_object(Config)
-CORS(app)
+
+# Configure CORS
+CORS(app, resources={r"/api/*": {"origins": "https://rando-webapp.vercel.app"}})
+
 mongo.init_app(app)
 
 def test_mongo_connection():
@@ -33,7 +36,6 @@ app.register_blueprint(generate_bp)
 app.register_blueprint(user_activity_bp)
 app.register_blueprint(mock_data_bp)
 app.register_blueprint(data_template_bp)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
