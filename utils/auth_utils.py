@@ -9,7 +9,7 @@ def create_jwt_token(user_data):
         'user_id': user_data['user_id'],
         'username': user_data['username'],
         'role': user_data['role'],
-        'exp': datetime.utcnow() + timedelta(hours=1)  # Example expiration time
+        'exp': datetime.utcnow() + timedelta(hours=24)  # Example expiration time
     }, Config.SECRET_KEY, algorithm="HS256")
     return token
 
